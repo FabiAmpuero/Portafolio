@@ -11,9 +11,6 @@
     .contenedor {
         width: 500px;
     }
-    .hero {
-        font-size: 20px;
-    }
 }
 @media (min-width: 768px) {
   .contenedor {
