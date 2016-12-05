@@ -77,15 +77,22 @@ header .icon-bars {
 }
 #main-navigation {
     z-index: 1;
-    position: absolute;
+    position: fixed;
     right: 10px;
-    margin: 10px 0 0 0;
+    margin: 50px 0 0 0;
 }
 #main-navigation ul {
     background: rgba(0,0,0,0.7);
     list-style: none;
     padding: 10px;
     border-radius: 5px;
+}
+#main-navigation ul a {
+    color: #fff;
+}
+#main-navigation ul a:hover {
+    background: rgb(240,95,64);
+    border-radius: 10px;
 }
 /* Menu fijo con javascript */
 .menu-fijo {
@@ -183,6 +190,17 @@ hr {
 /* --------------------------------------------------------------------------------- FOTOS -- */
 .fotos .col-md-4 {
     padding: 0;
+}
+.img-responsive {
+    min-width: 100%;
+}
+.fotos .fondo {
+    background: rgba(240,95,64,0.7);
+    position: relative;
+    display: none;
+}
+.fondo p {
+    padding: 20px;
 }
 /* -------------------------------------------------------------------------------- GITHUB -- */
 .github {
