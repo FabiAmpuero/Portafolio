@@ -60,7 +60,7 @@ header {
     position: fixed;
     z-index: 1000;
     top: 0;
-    box-shadow: 1px 3px 5px rgba(255, 167, 0, 0.34);
+    box-shadow: 1px 3px 5px rgba(255, 167, 0, 0.24);
 }
 /* Menu hamburguesa */
 #main-navigation {
@@ -197,6 +197,9 @@ footer {
 }
 footer h2, footer p {
     color: #000;
+}
+footer p {
+    padding-top: 20px;
 }
 footer .icon-footer {
     font-size: 40px;
