@@ -193,18 +193,30 @@ hr {
 }
 .img-responsive {
     min-width: 100%;
+    z-index: -1;
 }
-.fondo {
-    background: rgba(240,95,64,0.7);
-    position: absolute;
-    z-index: 1;
+.padre {
+    position: relative;
 }
-.fondo p {
-    padding: 20px;
-    position: absolute;
+.letra {
+    background: rgba(240,95,64,0.8);
     z-index: 1;
-    left: 50%;
-    margin-left: -55px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.letra p {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    margin-top: -21px;
+    display: none;
+}
+.letra-dos {
+    height: 80%;
 }
 /* -------------------------------------------------------------------------------- GITHUB -- */
 .github {

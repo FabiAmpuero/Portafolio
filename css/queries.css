@@ -46,7 +46,16 @@
         margin-bottom: 100px;
     }
     .fondo {
-        display: none;
+        display:
+    }
+    .letra {
+        display: block;
+    }
+    .letra-dos {
+        display: block;
+    }
+    .letra p {
+        display: block;
     }
 }
 @media screen and (max-width:400px) {
