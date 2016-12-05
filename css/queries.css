@@ -6,6 +6,9 @@
     .contenedor .btn {
         margin-bottom: 80px;
     }
+    .desktop-menu {
+        text-align: center;
+    }
 }
 @media (min-width:550px) {
     .contenedor {
@@ -13,19 +16,19 @@
     }
 }
 @media (min-width: 768px) {
-  .contenedor {
-    width: 450px;
-  }
+    .contenedor {
+        width: 450px;
+    }
 }
 @media (min-width: 992px) {
-  .contenedor {
-    width: 590px;
-  }
+    .contenedor {
+        width: 590px;
+    }
 }
 @media (min-width: 1200px) {
-  .contenedor {
-    width: 590px;
-  }
+    .contenedor {
+        width: 590px;
+    }
 }
 @media screen and (max-width:768px) {
     nav {

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portafolio</title>
 	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Josefin+Sans|Julius+Sans+One|Lato|Muli|Open+Sans|Parisienne|Raleway|Roboto|Catamaran" rel="stylesheet">
+	<link rel="stylesheet" href="icons/style.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery.js"></script>
@@ -20,9 +22,14 @@
                 <div class="col-sm-3 col-md-2">
                     <h4><a class="logo" href="index.html">MI PORTAFOLIO</a></h4>
                 </div>
+                
                 <div class="col-sm-9 col-md-10">
-                    <nav>
-                        <ul>
+                    <div class="text-right visible-xs">
+                        <button class="btn btn-primary" data-toggle="collapse" data-target="#main-navigation">Menú</button>
+                    </div>
+
+                    <nav class="hidden-xs">
+                        <ul class="desktop-menu list-inline text-right">
                             <li><a href="">SOBRE MÍ</a></li>
                             <li><a href="">SERVICIOS</a></li>
                             <li><a href="">MIS TRABAJOS</a></li>
@@ -31,13 +38,23 @@
                     </nav>
                 </div>
             </div>
+            <nav class="visible-xs">
+                    <div id="main-navigation" class="collapse">
+                        <ul  class="mobile-menu text-right">
+                            <li><a href="">SOBRE MÍ</a></li>
+                            <li><a href="">SERVICIOS</a></li>
+                            <li><a href="">MIS TRABAJOS</a></li>
+                            <li><a href="">CONTÁCTAME</a></li>
+                        </ul>
+                    </div>
+                </nav>
         
 <!-- ---------------------------------------------------------------------------------- HERO -->
             <div class="contenedor">
                 <h1 class="hero">HOLA, MI NOMBRE ES FABIOLA SOY CODER DE LABORATORIA</h1>
                 <hr>
-                <small>Estas interesado en desarrollar un sitio web o necesitas una frontend developer, yo te puedo ayudar con los diferentes servicios que brindo.</small>
-                <button class="btn">CONOCE MÁS</button>
+                <p>Estas interesado en desarrollar un sitio web o necesitas una frontend developer, yo te puedo ayudar con los diferentes servicios que brindo.</p>
+                <button class="boton">CONOCE MÁS</button>
             </div>
         </div>
     </header>
@@ -54,8 +71,84 @@
         <div class="container">
             <h2>SERVICIOS</h2>
             <hr>
-            
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                <i class="iconos icon-diamond"></i>
+                <h4>Desarrollo de plantillas</h4>
+                <p>Desarrollo de plantillas a medida con HTML5/ CSS3/ JS</p>
+                </div>
+                <div class="col-md-2">
+                <i class="iconos icon-plane"></i>
+                <h4>Campañas de Mailing</h4>
+                <p>Desarrollo de plantillas para campañas por correo</p>
+                </div>
+                <div class="col-md-2">
+                <i class="iconos icon-newspaper"></i>
+                <h4>Full websites</h4>
+                <p>Desarrollo websites completos y dinámicos</p>
+                </div>
+                <div class="col-md-2">
+                <i class="iconos icon-heart"></i>
+                <h4>Aplicaciones Android</h4>
+                <p>Desarrollo aplicaciones Android listas para subir a la tienda</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
         </div>
     </section>
+<!-- ------------------------------------------------------------------------------- FOTOS -->
+    <section class="fotos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/1.jpg" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/2.jpg" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/3.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/4.jpg" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/5.jpg" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ------------------------------------------------------------------------------ GITHUB -->
+    <section class="github">
+        <div class="container">
+            <h3>Si quieres saber más de mi proyecto revisa mi github</h3>
+            <button class="boton animated tada">VER MI GITHUB!</button>
+        </div>
+    </section>
+<!-- ------------------------------------------------------------------------------ FOOTER -->
+    <footer>
+        <div class="container">
+            <h2>CONTÁCTAME</h2>
+            <hr>
+            <p>¿Listo para empezar tu siguiente proyecto? ¿Te gusta lo que has visto? Genial!, dame una llamada o envíame un correo y te responderé lo más rápido que pueda!</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="icon-footer icon-phone animated swing"></i>
+                    <p class="number">+51 930-582-628</p>
+                </div>
+                <div class="col-md-6">
+                    <i class="icon-footer icon-envelope"></i>
+                    <a href="">fabi.ampuero.chalco@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- --------------------------------------------------------------------------- END FOOTER -->
 </body>
 </html>

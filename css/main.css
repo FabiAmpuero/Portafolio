@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 .contenedor {
-    margin: 0 auto
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 body {
     margin: 0;
@@ -18,6 +19,26 @@ a:hover {
 }
 ul {
     list-style: none;
+}
+h2 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0 15px 0;
+}
+p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+}
+.boton {
+    margin: 0 auto;
+    display: block;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px 20px 10px 20px;
+    border: none;
 }
 /* -------------------------------------------------------------------------------- HEADER -- */
 header {
@@ -41,7 +62,20 @@ header {
     top: 0;
     box-shadow: 1px 3px 5px rgba(255, 167, 0, 0.34);
 }
-/*Menu fijo con javascript*/
+/* Menu hamburguesa */
+#main-navigation {
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    margin: 10px 0 0 0;
+}
+#main-navigation ul {
+    background: rgba(0,0,0,0.7);
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Menu fijo con javascript */
 .menu-fijo {
     background: rgba(255, 255, 255, 0.78);
     width: 100%;
@@ -53,7 +87,7 @@ header {
 .menu-fijo .logo, .menu-fijo ul li a {
     color: orangered;
 }
-/*Fin Menu fijo con javascript*/
+/* Fin Menu fijo con javascript */
 .menu * {
     margin: 0;
     font-size: 12px;
@@ -61,6 +95,7 @@ header {
 }
 .menu a:hover {
     color: #fff;
+    font-weight: bold;
     background: rgba(255, 77, 11, 0.81);
 }
 nav ul {
@@ -74,6 +109,7 @@ nav ul li a {
     display: inline-block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
     padding: 10px;
     text-decoration: none;
+    transition: all 0.2s;
 }
 /* ---------------------------------------------------------------------------------- HERO -- */
 .hero {
@@ -89,36 +125,98 @@ hr {
     border-width: 2px;
     border-color: #ff4d0b;
 }
-.contenedor small {
+.contenedor p {
     padding: 20px 0 30px 0;
-    display: block;
-    text-align: center;
-    font-size: 14px;
 }
-.contenedor .btn {
-    margin: 0 auto;
-    display: block;
-    background: #eb561f;
-    border-radius: 30px;
-    font-size: 13px;
-    padding: 12px 20px 10px 20px;
+.contenedor .boton {
+    background: rgb(240,95,64);
     margin-bottom: 240px;
-    font-weight: bold;
 }
-.contenedor .btn:hover {
+.contenedor .boton:hover {
     background: rgba(255, 77, 11, 0.81);
     color: #fff;
 }
 /* ----------------------------------------------------------------------------- CONTENIDO -- */
 .contenido {
-    background: #eb561f;
+    background: rgb(240,95,64);
 }
-h2 {
-    margin: 0;
-    color: #fff;
-    text-align: center;
+.contenido hr {
+    border-color: #fff;
 }
 .contenido p {
+    padding: 20px 0 100px 0;
+    margin: 0;
+}
+/* ----------------------------------------------------------------------------- SERVICIOS -- */
+.servicios {
+    margin-bottom: 55px;
+}
+.servicios h2 {
+    color: #000;
+}
+.servicios h4 {
+    text-align: center;
+    font-weight: bold;
+}
+.servicios p {
+    color: #a7a7a7;
+}
+.iconos {
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    padding: 30px 0 20px 0;
+    color: rgb(240,95,64);
+}
+/* --------------------------------------------------------------------------------- FOTOS -- */
+.fotos .col-md-4 {
+    padding: 0;
+}
+/* -------------------------------------------------------------------------------- GITHUB -- */
+.github {
+    background: rgb(34,34,34);
+}
+.github h3 {
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 15px 0;
+}
+.github .boton {
+    background: rgb(255, 255, 255);
+    margin-bottom: 35px;
+    border: 1px solid #fff;
+    transition: all 0.2s;
+}
+.github .boton:hover {
+    background: rgba(255, 255, 255, 0);
     color: #fff;
 }
 /* -------------------------------------------------------------------------------- FOOTER -- */
+footer {
+    margin-bottom: 80px;
+}
+footer h2, footer p {
+    color: #000;
+}
+footer .icon-footer {
+    font-size: 40px;
+    display: block;
+    text-align: center;
+}
+footer .number {
+    margin: 0;
+    padding: 0;
+}
+footer a {
+    text-align: center;
+    display: block;
+    color: rgb(240,95,64);
+    font-size: 18px;
+    transition: all 0.2s;
+}
+footer a:hover {
+    background: #692020;
+    border-radius: 10px;
+    color: #fff;
+}
+/* ---------------------------------------------------------------------------- END FOOTER -- */
