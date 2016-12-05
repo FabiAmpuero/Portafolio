@@ -38,15 +38,15 @@
         color: orangered;
         font-size: 20px; 
     }
+    .desktop-menu li a {
+        color: orangered;
+    }
     header .icon-bars {
         color: #ccc;
         border-color: #ccc;
     }
     .contenedor .boton {
         margin-bottom: 100px;
-    }
-    .fondo {
-        display:
     }
     .letra {
         display: block;
