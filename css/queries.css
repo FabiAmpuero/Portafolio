@@ -46,7 +46,7 @@
         margin-bottom: 100px;
     }
     .fondo {
-        display: block;
+        display: none;
     }
 }
 @media screen and (max-width:400px) {
