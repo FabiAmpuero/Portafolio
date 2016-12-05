@@ -41,6 +41,7 @@ header {
     top: 0;
     box-shadow: 1px 3px 5px rgba(255, 167, 0, 0.34);
 }
+/*Menu fijo con javascript*/
 .menu-fijo {
     background: rgba(255, 255, 255, 0.78);
     width: 100%;
@@ -52,6 +53,7 @@ header {
 .menu-fijo .logo, .menu-fijo ul li a {
     color: orangered;
 }
+/*Fin Menu fijo con javascript*/
 .menu * {
     margin: 0;
     font-size: 12px;
@@ -108,4 +110,15 @@ hr {
     color: #fff;
 }
 /* ----------------------------------------------------------------------------- CONTENIDO -- */
+.contenido {
+    background: #eb561f;
+}
+h2 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+.contenido p {
+    color: #fff;
+}
 /* -------------------------------------------------------------------------------- FOOTER -- */
