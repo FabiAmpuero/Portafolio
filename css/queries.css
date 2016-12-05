@@ -31,5 +31,20 @@
     }
 }
 @media screen and (max-width:768px) {
-    
+    .menu {
+        background: #fff;
+    }
+    .logo {
+        color: orangered;
+        font-size: 20px; 
+    }
+    header .icon-bars {
+        color: #ccc;
+        border-color: #ccc;
+    }
+}
+@media screen and (max-width:400px) {
+    .logo {
+        font-size: 15px;
+    }
 }
