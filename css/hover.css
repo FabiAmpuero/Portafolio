@@ -6,7 +6,6 @@
 
 .hovereffect .overlay {
     width: 100%;
-    height: 100%;
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -19,6 +18,12 @@
     -webkit-transition: all 0.2s 0.4s ease-in-out;
     transition: all 0.2s 0.4s ease-in-out;
 }
+.hovereffect .overlay-uno {
+    height: 100%;
+}
+.hovereffect .overlay-dos {
+    height: 85%;
+}
 
 .hovereffect p.info {
     position: relative;
@@ -29,6 +34,10 @@
     transform: translateY(-200px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+}
+
+.hovereffect .overlay-dos p.info {
+    margin-top: 0;
 }
 
 .hovereffect:hover .overlay {
